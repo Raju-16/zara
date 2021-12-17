@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOG IN/CREATE ACCOUNT AT ZARA</title>
+    <style>
+        body{
+    font-family: Neue-Helvetica, Helvetica, Arial, sans-serif;
+        }
+     #head{
+         width:100%;
+         height:200px;
+         display: flex;
+     }
+     #sub1{
+         margin-top:-110px;
+         margin-left: 100px;
+     }
+     #sub2{
+         width:400px;
+         height:100%;
+         display: flex;
+         justify-content: space-evenly;
+         margin-left:600px;
+         font-size: 10px;
+         font-weight: bold;
+     }
+     #sub2>P:first-child{
+         font-size: 20px;
+         text-decoration: underline;
+         margin-top:5px;
+         cursor: pointer;
+     }
+     #sub2>p:nth-child(2){
+         cursor: pointer;
+     }
+     #second{
+         width:850px;
+         height:400px;
+         display: flex;
+         justify-content: space-between;
+         margin-left: 120px;
+         font-size: 10px;
+     }
+     #second>div{
+         height:100%;
+         width:250px;
+        
+         line-height: 40px;
+     }
+     input{
+         border:0;
+         border-bottom: 2px solid grey;;
+         width:100%;
+         font-size: 10px;;
+         height:30px
+     }
+     button{
+         height:30px;
+         width:100%;
+         background-color: black;
+         color:white;
+         font-size: 10px;
+     }
+     #final>p{
+         width:350px;
+        line-height:15px;
+     }
+     #final>button{
+        margin-top: 50px;
+     }
+    </style>
+</head>
+<body>
+    <div id="head">  
+         <div id="sub1">
+            <img src="https://www.logo.wine/a/logo/Zara_(retailer)/Zara_(retailer)-Logo.wine.svg" width=275px height=325px>
+        </div>
+        <div id="sub2">
+            <p id="search">SEARCH</p>
+            <p id="help">HELP</p>
+            <p>CART</p>
+        </div>
+    </div>
+    <div id="second">
+        <div>
+            <h2>LOG IN</h2>
+            <input type="email" placeholder="E-MAIL">
+            <input type="password" placeholder="PASSWORD"><br>
+            <p>HAVE YOU FORGOTTEN YOUR PASSWORD?</p>
+            <button>LOG IN</button>
+        </div>
+        <div id="final">
+            <h2>PURCHASE AS A GUEST</h2>
+            <p>YOU CAN PURCHASE AS A GUEST. YOU WILL JUST NEED TO INDICATE THE ESSENTIAL DETAILS TO PLACE YOUR ORDER</p>
+            <p>IF YOU’D LIKE, YOU CAN REGISTER AND SAVE YOUR DETAILS FOR FUTURE PURCHASES AT THE END OF THE PURCHASE PROCESS</p>
+           <button>CONTINUE AS A GUEST</button>    
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    document.querySelector("#search").addEventListener("click",function(){
+        window.location.href="https://www.zara.com/in/en/search";
+    })
+    document.querySelector("#help").addEventListener("click",function(){
+        window.location.href="https://www.zara.com/in/en/help"
+    })
+</script>

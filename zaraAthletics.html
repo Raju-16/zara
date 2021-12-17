@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            font-family: Neue-Helvetica, Helvetica, Arial, sans-serif;
+            color:white;
+        }
+        #img{
+            width:100%;
+            height:500px;
+            display: flex;
+            margin-top: 150px;
+        }
+    #img>div{
+        width:50%;
+        height:100%;
+        color:white;
+        font-family: Neue-Helvetica, Helvetica, Arial, sans-serif;
+    }
+    #img>div>h1{
+        font-size: 65px;
+        color: white;
+    }
+    #nav{
+        color:white;
+        display:flex;
+        width:100%;
+        justify-content: space-around;
+        position:fixed;
+        top:0;
+    }
+    #nav>h2{
+        width:800px;
+        margin-left: 100px;
+    }
+    #nav>h4{
+        text-decoration: underline;
+        margin-top:17px;
+    }
+    #nav>p{
+        font-size:10px
+    }
+    #img>div>h1{
+        margin: 0;
+    }
+    #img>div>h1>sup{
+        font-size: 40px;
+      
+    
+    }
+    .h1{
+        text-align:center;
+      
+        font-size: 65px;
+        margin-top:100px;
+    }
+    .produts{
+        width:90%;
+        display:grid;
+    }
+    </style>
+</head>
+<body>
+  <div id="nav">
+      <h2>ZARA  ATHLETICZ</h2>
+     <h4> <a style="color: white" href="https://www.zara.com/in/en/search">SEARCH</a></h4>
+      <p>LOGIN</p>
+      <p>HELP</p>
+      <p>CART</p>
+  </div>
+    <div id="img">
+        <div>
+        <img src="https://static.zara.net/photos///2021/I/M/1/p/0000/002/476/2/w/530/0000002476_15_1_1.jpg?ts=1633359786073",width=570px height=500px>
+        </div>
+        <div>
+            <h1>T-SHIRTS  <sup>61</sup></h1>
+            <h1>SHORTS  <sup>51</sup></h1>
+            <h1>TROUSERS  <sup>35</sup></h1>
+            <h1>SWEATSHIRTS  <sup>61</sup></h1>
+            <h1>OUTDOORS  <sup>13</sup></h1>
+            <h1>ACCESSORIES  <sup>26</sup></h1>
+            <h1>SHOES <sup>8</sup></h1>
+
+        </div>
+    </div>
+    <h1 class="h1">T-SHIRTS</h1>
+    <div id="tshirts" class="produts"></div>
+    <h1 class="h1">SHORTS</h1>
+    <div id="shorts"  class="produts"></div>
+    <h1 class="h1">TROUSERS</h1>
+    <div id="trousers"  class="produts"></div>
+    <h1 class="h1"  class="produts">SWEATSHIRTS</h1>
+    <div id="sweatshirts"></div>
+    <h1 class="h1"  class="produts">OUTDORS</h1>
+    <div id="outdoors"  class="produts"></div>
+    <h1 class="h1">ACCESSORIES</h1>
+    <div id="accessories"  class="produts"></div>
+    <h1 class="h1">SHOES</h1>
+    <div id="shoes"  class="produts"></div>
+    
+</body>
+</html>
+<script>
+   var arr=JSON.parse(localStorage.getItem("products"));
+   arr.map(function(elem))
+</script>
