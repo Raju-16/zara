@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="url" type="text" placeholder="imgurl">
+    <input  id="colors"  type="text"  placeholder="colors">
+    <input  id="name"  type="text"  placeholder="name">
+    <input   id="price"  type="text"  placeholder="price">
+    <button> add to products</button>
+    <button id="mapProducts">go to produts</button>
+   
+    
+</body>
+</html>
+<script>
+    var arr=JSON.parse(localStorage.getItem("produts"))||[];
+    document.querySelector("button").addEventListener("click",store);
+   function store(){
+    var data={
+        URL:document.querySelector("#url").value,
+        Colors:document.querySelector("#colors").value,
+        Name:document.querySelector("#name").value,
+        Price:document.querySelector("#price").value
+    };
+    arr.push(data);
+    localStorage.setItem("products",JSON.stringify(arr));
+    console.log(JSON.parse(localStorage.getItem("products")))
+    
+   }
+   document.querySelector("#mapProducts").addEventListener("click",function(arr){
+       mapIt(JSON.parse(localStorage.getItem("products")));
+   })
+   function mapIt(arr){
+     
+       window.location.href="zaraAthletics.html"
+      
+   }
+   
+
+
+
+
+</script>
