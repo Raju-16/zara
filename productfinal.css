@@ -113,5 +113,6 @@ a {
 /* when add to bag click visiblity block */
 .right button~button{
     visibility: hidden;
+    
 }
 

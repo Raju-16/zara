@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,47 +8,53 @@
     <title>Basket</title>
     <link rel="stylesheet" href="cart.css">
 </head>
+
 <body>
     <div id="main">
         <div id="sub">
-           <img src="https://www.logo.wine/a/logo/Zara_(retailer)/Zara_(retailer)-Logo.wine.svg" width=275px height=325px>
+            <img src="https://www.logo.wine/a/logo/Zara_(retailer)/Zara_(retailer)-Logo.wine.svg" width=275px
+                height=325px>
         </div>
-        <div id="sub1" >
-        <p><a href="loginMain.html">LOG IN</a> </p>
-        <p><a href="https://www.zara.com/in/en/help">HELP</a></p>
+        <div id="sub1">
+            <p><a href="loginMain.html">LOG IN</a> </p>
+            <p><a href="https://www.zara.com/in/en/help">HELP</a></p>
         </div>
     </div>
-    <div id="mainCart"><h2>SHOPPING BAG</h2>
+    <div id="mainCart">
+        <h2>SHOPPING BAG</h2>
         <P id="item">ITEMS</P>
         <div id="mainbox"></div>
     </div>
     <div id="bottom">
-      <P><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-right-fill" viewBox="0 0 16 16">
-        <path d="M14 0a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12z"/>
-      </svg>  CHAT</P>
-      
-    <div id="button">
-        <div id="one">
-            <h4 >TOTAL:<span id="total"></span></h4>
-            <P>Including GST</P>
-            <P>*Excl Shopping Cost</P>
+        <P><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-chat-right-fill" viewBox="0 0 16 16">
+                <path
+                    d="M14 0a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12z" />
+            </svg> CHAT</P>
+
+        <div id="button">
+            <div id="one">
+                <h4>TOTAL: <span id="total"></span></h4>
+                <P>Including GST</P>
+                <P>*Excl Shopping Cost</P>
+            </div>
+            <div id="two">
+                <button onclick="gotoproceed()" class="butt">CONTINUE</button>
+            </div>
         </div>
-        <div id="two">
-            <button class="butt">CONTINUE</button>
-        </div>
-    </div>
     </div>
     <div id="links">
         <div>
             <h3>HELP</h3>
-           <p> <a href="https://www.zara.com/in/en/help/shop-at-zaracom-h2.html">SHOP AT ZARA.COM</a></p>
-         <p>    <a href="https://www.zara.com/in/en/help/product-h9.html">PRODUCT</a></p>
-          <p>  <a href="https://www.zara.com/in/en/help/payment-h25.html">PAYMENT</a></p>
-           <p> <a href="https://www.zara.com/in/en/help/shipping-h31.html">SHIPPING</a></p>
-          <p>  <a href="https://www.zara.com/in/en/help/exchanges-and-returns-h36.html">EXCHANGES AND RETURNS</a></p>
-           <p> <a href="https://www.zara.com/in/en/help/shops-and-company-h41.html">SHOPS AND COMPANY</a></p>
-           <p> <a href="https://www.zara.com/in/en/help/clothes-collection-programme-h59.html">CLOTHES AND COLLECTION PROGRAM</a></p>
-         <p>   <a href="https://www.zara.com/in/en/user/menu">MY ACCOUNT</a></p>
+            <p> <a href="https://www.zara.com/in/en/help/shop-at-zaracom-h2.html">SHOP AT ZARA.COM</a></p>
+            <p> <a href="https://www.zara.com/in/en/help/product-h9.html">PRODUCT</a></p>
+            <p> <a href="https://www.zara.com/in/en/help/payment-h25.html">PAYMENT</a></p>
+            <p> <a href="https://www.zara.com/in/en/help/shipping-h31.html">SHIPPING</a></p>
+            <p> <a href="https://www.zara.com/in/en/help/exchanges-and-returns-h36.html">EXCHANGES AND RETURNS</a></p>
+            <p> <a href="https://www.zara.com/in/en/help/shops-and-company-h41.html">SHOPS AND COMPANY</a></p>
+            <p> <a href="https://www.zara.com/in/en/help/clothes-collection-programme-h59.html">CLOTHES AND COLLECTION
+                    PROGRAM</a></p>
+            <p> <a href="https://www.zara.com/in/en/user/menu">MY ACCOUNT</a></p>
 
 
 
@@ -66,15 +73,18 @@
         </div>
         <div>
             <h3>COMPANY</h3>
-           <p><a href="https://www.zara.com/in/en/z-company-l1391.html?v1=11112">ABOUT US</a></p>
-           <p><a href="https://www.zara.com/in/en/z-company-l1391.html?v1=18002">OFFICES</a></p>
-           <p><a href="https://www.zara.com/in/en/z-stores-l1404.html?v1=11108">STORES</a></p>
-           <p><a href="https://www.zara.com/in/en/z-job-l1398.html?v1=18003">WORKS WITH US</a></p>
+            <p><a href="https://www.zara.com/in/en/z-company-l1391.html?v1=11112">ABOUT US</a></p>
+            <p><a href="https://www.zara.com/in/en/z-company-l1391.html?v1=18002">OFFICES</a></p>
+            <p><a href="https://www.zara.com/in/en/z-stores-l1404.html?v1=11108">STORES</a></p>
+            <p><a href="https://www.zara.com/in/en/z-job-l1398.html?v1=18003">WORKS WITH US</a></p>
         </div>
         <div>
             <h3>POLICIES</h3>
-            <p><a href="https://static.zara.net/static/pdfs/IN/privacy-policy/privacy-policy-en_IN-20210924.pdf">PRIVACY POLICY</a></p>
-            <p><a href="https://static.zara.net/static//pdfs/IN/terms-and-conditions/terms-and-conditions-en_IN-20200305.pdf">PURCHASE CONDITIONS</a></p>
+            <p><a href="https://static.zara.net/static/pdfs/IN/privacy-policy/privacy-policy-en_IN-20210924.pdf">PRIVACY
+                    POLICY</a></p>
+            <p><a
+                    href="https://static.zara.net/static//pdfs/IN/terms-and-conditions/terms-and-conditions-en_IN-20200305.pdf">PURCHASE
+                    CONDITIONS</a></p>
             <p><a href="">COOKIES AND SETTINGS</a></p>
         </div>
     </div>
@@ -82,12 +92,13 @@
     <div id="foot">
         <p>INDIA</p>
         <p>ENGLISH</p>
-        </div>
-        <div id="footer">
-            <h5>NAME AND ADDRESS OF THE MANUFACTURER:</h5>
+    </div>
+    <div id="footer">
+        <h5>NAME AND ADDRESS OF THE MANUFACTURER:</h5>
         <h5>INDUSTRIA DE DISEÑO TEXTIL, S.A. (INDITEX, S.A.)</h5>
         <h5>AVENIDA DE LA DIPUTACIÓN, EDIFICIO INDITEX, 15143, ARTEIXO (A CORUÑA), SPAIN</h5>
-        </div>
+    </div>
 </body>
+
 </html>
 <script src="main.js"></script>

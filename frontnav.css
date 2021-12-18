@@ -139,17 +139,17 @@
 
             width: 100%;
             position: absolute;
-
             margin-top: 70px;
             display: flex;
+            display: flex; 
+            justify-content: center; 
+            justify-content: space-between
 
         }
 
         .content div img {
             margin: auto;
-
-            display: block;
-
+            display: block
         }
 
         .content div p {

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="ship.css"/>
+</head>
+<body>
+    
+  <div class="cotainer">
+    <header >
+        <img 
+        max-width="220"
+        height="99"
+        src="https://assets.website-files.com/5ee732bebd9839b494ff27cd/5ef086debfcf6a70ad4245c6_main-qimg-b342fb78a72e8c3f77060e7dc8b54290.png" alt="zara" />
+    </header>
+    <div class="hd"><h2>PLEASE ENTER THE DELIVERY DETAILS</h2></2></div>
+    <div class="rad">
+        
+            <input name="personal" type="radio" value="per" />
+            <label>PERSONAL</label>
+            <input name="company" type="radio" value="com" />
+            <label>COMPANY</label>
+    </div>
+    <div class="box">
+        <div class="left">
+            <label>NAME</label>
+            <br>
+            <input id="name" type="text" placeholder="ENTER NAME">
+            <br>
+            <label>ADDRESS</label>
+            <br>
+            <input id="address" type="text" placeholder="ENTER ADDRESS">
+            <br>
+            <label>LOCALITY</label>
+            <br>
+            <input id="locality" type="text" placeholder="ENTER LOCALITY">
+            <br>
+            <label>STATE</label>
+            <br>
+            <input id="state" type="text" placeholder="-------">
+            <br>
+            <label>EMAIL</label>
+            <input id="email" type="email" placeholder="ENTER EMAIL">
+        
+        </div>
+        <div class="right">
+            <label>PINCODE</label>
+            <br>
+            <input id ="pincode" type="number" placeholder="PINCODE">
+            <br>
+            <label>MORE INFO</label>
+            <br>
+            <input id="password" type="text" placeholder="OPTIONAL">
+            <br>
+            <label>CITY</label>
+            <br>
+            <input id="city" type="text" placeholder="CITY">
+            <br>
+            <label>REGION</label>
+            <input type="text" value="INDIA">
+            <br>
+            <label>TELEPHONE</label>
+            <br>
+            <input id="mobile" type="number" placeholder="TELEPHONE">
+        </div>
+    </div>
+<button type="button" >CONTINUE</button>
+  </div>
+</body>
+</html>
+<script >
+       document.querySelector("button").addEventListener("click", signUp);
+var userDetails= JSON.parse(localStorage.getItem("ZarauserData"))||[];
+    function signUp(){
+        var name = document.querySelector("#name").value;
+        var address = document.querySelector("#address").value;
+        var locality = document.querySelector("#locality").value;
+        var state = document.querySelector("#state").value;
+        var email = document.querySelector("#email").value;
+        var pincode = document.querySelector("#pincode").value;
+        var password=document.querySelector("#password").value;
+        var city=document.querySelector("#city").value;
+        var mobile=document.querySelector("#mobile").value;
+
+        var userrecord= {
+            Name:name,
+            address:address,
+            loca:locality,
+            State:state,
+            emailAdd: email,
+            pin:pincode,
+            pass: password,
+            cit: city,
+            mobile: mobile,
+        };
+        userDetails.push(userrecord);
+        console.log(userDetails);
+
+        localStorage.setItem("ZarauserData", JSON.stringify(userDetails));
+    }
+
+    document.querySelector("button").addEventListener("click", function(){
+        window.location.href="ghose_signin.html"
+    })
+</script>
