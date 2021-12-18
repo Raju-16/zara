@@ -47,7 +47,7 @@ function addToCart(){
 }
 
 function goToProceed() {
-    window.location.href="productfinal.html"
+    window.location.href="basket.html"
 }
 
 
