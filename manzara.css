@@ -2,7 +2,8 @@ header{
     padding: 12px 20px;
     display: flex;
     position: fixed;
-    
+    width: 100%;
+    display: flex;
 }
 .fa-bars{
     font-size: 25px;
@@ -12,16 +13,21 @@ header{
     height: auto;
     margin-left: 4%;
     margin-top: -55px;
-    padding-left: 15%;
+    /* padding-left: 15%; */
 }
 .rightnavlogin{
     margin-top: -16px;
     display: flex;
-    padding-left: 194%;
+    /* padding-left: 20%; */
+    position: fixed;
+    right: 0;
+    
     
 }
 
+
 a {
+    
     color:black;
     user-select: none;
     box-sizing: border-box;
