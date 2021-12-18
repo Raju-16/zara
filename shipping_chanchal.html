@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap');
+
+        #store,
+        #home {
+            border-bottom: 2px solid lavender;
+            border-top: 2px solid lavender;
+            padding-top: 25px;
+
+
+        }
+
+        body {
+            width: 70%;
+            margin: auto;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        #main1,
+        #main2 {
+            margin-top: 70px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 10px;
+        }
+
+        label,
+        input {
+            margin-left: 15px;
+            font-size: 10px;
+
+        }
+
+        p {
+            margin-right: 20px;
+            text-align: right;
+            font-family: 'Poppins', sans-serif;
+            font-size: 10px;
+        }
+
+        /* input:hover{
+           background-color: rgb(102, 87, 87);
+         
+          color: rgb(0, 0, 0);
+       }
+       */
+        button {
+            background-color: black;
+            color: white;
+            margin-bottom: 0px;
+            margin-right: 0px;
+            position: fixed;
+            width: 250px;
+            border-radius: 0px;
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+            margin-top: auto;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <H1>CHOOSE YOUR SHIPPING METHOD</H1>
+    <div id="main1">
+        <h1>IN-STORE PICK UP</h1>
+        <div id="store">
+            <input name="personal" type="radio" value="per" />
+            <label>TUESDAY 21, DECEMBER - THURSDAY 23, DECEMBER</label>
+            <P>FREE</P>
+        </div>
+    </div>
+    <div id="main2">
+        <H1>HOME DELIVERY</H1>
+        <div id="home">
+            <input name="personal" type="radio" value="per" />
+            <label>TUESDAY 21, DECEMBER - THURSDAY 23, DECEMBER</label><br />
+            <label style="color: silver;">TRANSPORT RESTRICTIONS MAY APPLY TO SOME AREAS</label>
+            <P>FREE</P>
+        </div>
+    </div>
+    <button>CONTINUE</button>
+</body>
+
+</html>
+<script>
+       document.querySelector("button").addEventListener("click", function(){
+        window.location.href="pay.html"
+    })
+</script>
