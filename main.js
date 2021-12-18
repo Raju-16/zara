@@ -136,7 +136,7 @@ function normaltest() {
 }
 
 function gotoproceed() {
-    window.location.href = "pay.html"
+    window.location.href = "shipping_chanchal.html"
 }
 
 
