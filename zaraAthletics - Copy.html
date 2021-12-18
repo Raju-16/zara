@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATHLETICZ COLLECTION|ZARA India</title>
+    <style>
+        body{
+            background-color: black;
+            font-family: Neue-Helvetica, Helvetica, Arial, sans-serif;
+            color:white;
+        }
+        #img{
+            width:100%;
+            height:500px;
+            display: flex;
+            margin-top: 150px;
+        }
+    #img>div{
+        width:50%;
+        height:100%;
+        color:white;
+        font-family: Neue-Helvetica, Helvetica, Arial, sans-serif;
+    }
+    #img>div>h1{
+        font-size: 65px;
+        color: white;
+    }
+    #nav{
+        color:white;
+        display:flex;
+        width:100%;
+        justify-content: space-around;
+        position:fixed;
+        top:0;
+    }
+    #nav>h2{
+        width:800px;
+        margin-left: 100px;
+    }
+    #nav>h4{
+        text-decoration: underline;
+        margin-top:17px;
+    }
+    #nav>p{
+        font-size:10px
+    }
+    #img>div>h1{
+        margin: 0;
+    }
+    #img>div>h1>sup{
+        font-size: 40px;
+      
+    
+    }
+    .h1{
+        text-align:center;
+      
+        font-size: 65px;
+        margin-top:100px;
+    }
+    .products{
+        width:90%;
+        display:grid;
+      
+        margin:auto;
+     grid-template:repeat(2,550px)/repeat(4,290px);
+     grid-gap:50px 20px;
+    }
+    .products>div{
+       font-size: 10px;
+       line-height: 2px;
+    }
+    h1>a{
+        color:white;
+        text-decoration: none;
+    }
+
+    </style>
+</head>
+<body>
+  <div id="nav">
+      <h2>ZARA  ATHLETICZ</h2>
+     <h4> <a style="color: white" href="https://www.zara.com/in/en/search">SEARCH</a></h4>
+      <p>LOGIN</p>
+      <p>HELP</p>
+      <p>CART</p>
+  </div>
+    <div id="img">
+        <div>
+        <img src="https://static.zara.net/photos///2021/I/M/1/p/0000/002/476/2/w/530/0000002476_15_1_1.jpg?ts=1633359786073",width=570px height=500px>
+        </div>
+        <div>
+            <h1><a href="#shirts">T-SHIRTS </a> <sup>61</sup></h1>
+            <h1><a href="#short">SHORTS</a>  <sup>51</sup></h1>
+            <h1><a href="#trou">TROUSERS</a>  <sup>35</sup></h1>
+            <h1><a href="#sweat">SWEATSHIRTS</a>  <sup>61</sup></h1>
+            <h1><a href="#out">OUTDOORS</a>  <sup>13</sup></h1>
+            <h1><a href="#out">ACCESSORIES</a>  <sup>26</sup></h1>
+            <h1><a href="#shoe">SHOES</a> <sup>8</sup></h1>
+
+        </div>
+    </div>
+    <h1 class="h1" id="shirts">T-SHIRTS</h1>
+    <div id="tshirts" class="products"></div>
+    <h1 class="h1" id="short">SHORTS</h1>
+    <div id="shorts"  class="products"></div>
+    <h1 class="h1" id="trou">TROUSERS</h1>
+    <div id="trousers"  class="products"></div>
+    <h1 class="h1" id="sweat" >SWEATSHIRTS</h1>
+    <div id="sweatshirts"  class="products"></div>
+    <h1 class="h1" id="out">OUTDORS</h1>
+    <div id="outdoors"  class="products"></div>
+    <h1 class="h1" id="access">ACCESSORIES</h1>
+    <div id="accessories"  class="products"></div>
+    <h1 class="h1" id="shoe">SHOES</h1>
+    <div id="shoes"  class="products"></div>
+    
+</body>
+</html>
+<script>
+   var tshirts=JSON.parse(localStorage.getItem("tshirts"));
+   tshirts.map(function(elem){
+       var div=document.createElement("div")
+       var img=document.createElement("img");
+       img.setAttribute("src",elem.URL);
+       img.setAttribute("width","100%");
+       img.setAttribute("height","500px");
+       var color=document.createElement("p");
+       color.textContent=elem.Colors;
+       var name=document.createElement("p");
+       name.textContent=elem.Name;
+       var price=document.createElement("p");
+       price.textContent=elem.Price;
+       div.append(img,color,name,price);
+       document.querySelector("#tshirts").append(div);
+   })
+var shorts=JSON.parse(localStorage.getItem("shorts"));
+shorts.map(function(elem){
+       var div=document.createElement("div")
+       var img=document.createElement("img");
+       img.setAttribute("src",elem.URL);
+       img.setAttribute("width","100%");
+       img.setAttribute("height","500px");
+       var color=document.createElement("p");
+       color.textContent=elem.Colors;
+       var name=document.createElement("p");
+       name.textContent=elem.Name;
+       var price=document.createElement("p");
+       price.textContent=elem.Price;
+       div.append(img,color,name,price);
+       document.querySelector("#shorts").append(div);
+   })
+   var trousers=JSON.parse(localStorage.getItem("trousers"));
+trousers.map(function(elem){
+       var div=document.createElement("div")
+       var img=document.createElement("img");
+       img.setAttribute("src",elem.URL);
+       img.setAttribute("width","100%");
+       img.setAttribute("height","500px");
+       var color=document.createElement("p");
+       color.textContent=elem.Colors;
+       var name=document.createElement("p");
+       name.textContent=elem.Name;
+       var price=document.createElement("p");
+       price.textContent=elem.Price;
+       div.append(img,color,name,price);
+       document.querySelector("#trousers").append(div);
+   })
+   var sweatshirts=JSON.parse(localStorage.getItem("sweatshirts"));
+sweatshirts.map(function(elem){
+       var div=document.createElement("div")
+       var img=document.createElement("img");
+       img.setAttribute("src",elem.URL);
+       img.setAttribute("width","100%");
+       img.setAttribute("height","500px");
+       var color=document.createElement("p");
+       color.textContent=elem.Colors;
+       var name=document.createElement("p");
+       name.textContent=elem.Name;
+       var price=document.createElement("p");
+       price.textContent=elem.Price;
+       div.append(img,color,name,price);
+       document.querySelector("#sweatshirts").append(div);
+   })
+   var outdoors=JSON.parse(localStorage.getItem("outdoors"));
+outdoors.map(function(elem){
+       var div=document.createElement("div")
+       var img=document.createElement("img");
+       img.setAttribute("src",elem.URL);
+       img.setAttribute("width","100%");
+       img.setAttribute("height","500px");
+       var color=document.createElement("p");
+       color.textContent=elem.Colors;
+       var name=document.createElement("p");
+       name.textContent=elem.Name;
+       var price=document.createElement("p");
+       price.textContent=elem.Price;
+       div.append(img,color,name,price);
+       document.querySelector("#outdoors").append(div);
+   })
+   var accessories=JSON.parse(localStorage.getItem("accessories"));
+accessories.map(function(elem){
+       var div=document.createElement("div")
+       var img=document.createElement("img");
+       img.setAttribute("src",elem.URL);
+       img.setAttribute("width","100%");
+       img.setAttribute("height","500px");
+       var color=document.createElement("p");
+       color.textContent=elem.Colors;
+       var name=document.createElement("p");
+       name.textContent=elem.Name;
+       var price=document.createElement("p");
+       price.textContent=elem.Price;
+       div.append(img,color,name,price);
+       document.querySelector("#accessories").append(div);
+   })
+   var shoes=JSON.parse(localStorage.getItem("shoes"));
+shoes.map(function(elem){
+       var div=document.createElement("div")
+       var img=document.createElement("img");
+       img.setAttribute("src",elem.URL);
+       img.setAttribute("width","100%");
+       img.setAttribute("height","500px");
+       var color=document.createElement("p");
+       color.textContent=elem.Colors;
+       var name=document.createElement("p");
+       name.textContent=elem.Name;
+       var price=document.createElement("p");
+       price.textContent=elem.Price;
+       div.append(img,color,name,price);
+       document.querySelector("#shoes").append(div);
+   })
+</script>
