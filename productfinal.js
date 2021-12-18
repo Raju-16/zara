@@ -22,6 +22,7 @@ function addToCart(){
         name : obj.cat,
         Price : obj.price,
         size : size,
+        Qty:1,
     }
     console.log(cartobj)
     if(size == "null"){
@@ -37,12 +38,16 @@ function addToCart(){
     // console.log(proceed)
     
     
-    console.log(size)
-    console.log(cart)
+    // console.log(size)
+    // console.log(cart)
     // document.querySelector("#cartlength").textContent = cart.length
     
     // console.log(cart)
     
+}
+
+function goToProceed() {
+    window.location.href="productfinal.html"
 }
 
 
