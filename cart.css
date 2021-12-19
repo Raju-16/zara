@@ -120,7 +120,17 @@ body{
 .suBox{
     height:100%;
     width:150px;
-    padding: 5px;
+    padding-left: 20px;
+
+}
+.suBox p{
+    margin-top: 0px;
+    font-weight: bold;
+    font-stretch: ultra-condensed;
+    font-size: 14px;
+    font-family: sans-serif, "Helvetica Neue", "Lucida Grande", Arial;;
+
+    
 }
 .small{
     height:40px;
@@ -194,4 +204,8 @@ margin-top: 5px;
     font-size: 10px;
     line-height: 1px;
     margin-bottom: 500px;
+}
+.deleteicon{
+    background: transparent;
+    border: none;
 }

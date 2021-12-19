@@ -14,7 +14,8 @@ displayCart(cart)
 function displayCart(cart) {
     
     document.querySelector("#mainbox").textContent = "";
-    
+    document.querySelector("#item").textContent = "ITEMS"
+    document.querySelector("#item").textContent = cart.length + "  " + document.querySelector("#item").textContent;
     cart.map(function (elem, index) {
         var box = document.createElement("div");
         box.setAttribute("class", "boxes");
@@ -54,7 +55,11 @@ function displayCart(cart) {
 
         small.append(elem1, elem2, elem3);
         var button = document.createElement("button");
-        button.textContent = "Remove";
+        button.setAttribute("class","deleteicon")
+        var deleteicon = document.createElement("i");
+        deleteicon.setAttribute("class", "far fa-trash-alt");
+        button.append(deleteicon)
+        // button.textContent = "Remove";
         button.addEventListener("click", function () {
             Remove(index)
         });
