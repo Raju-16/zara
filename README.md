@@ -15,9 +15,9 @@ Check the LIVE hosted website [here](https://zara-vert.vercel.app/) or check scr
 I'm a full stack developer...
 
 
-## 🔗 Links
+## 🔗Deployed Links
 
-[![yashrajillusion](https://github.com/yashrajillusion)](http://github.com/)
+"https://zara-vert.vercel.app/"
 
 
 ## Contributing
